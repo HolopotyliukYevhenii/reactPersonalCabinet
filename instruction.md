@@ -127,8 +127,8 @@ These modules are **not pre-installed**, but commonly used alongside FSD:
 
 ### Set Github
 > go to main folder of project
->```git init```
-> ``` ```
+>``` git init```
+> ``` git add . ```
 > ``` ```
 > ``` ```
 > ``` ```
