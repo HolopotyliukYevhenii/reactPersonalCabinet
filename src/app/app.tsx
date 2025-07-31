@@ -1,7 +1,7 @@
-import React, { FunctionComponent } from 'react'
+import React from 'react';
 
-export const App: FunctionComponent = () => (
-  <div>
-    App
-  </div>
-)
+import { RouterProvider } from 'src/app/providers/RouterProvider';
+
+export const App = () => {
+  return <RouterProvider />;
+};

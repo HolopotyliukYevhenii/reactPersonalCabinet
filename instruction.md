@@ -4,7 +4,7 @@ Short contest:
 0. Quickly access to official documents
 1. Feature-Sliced Design (FSD) in a React Project
 2. Installing of project
-
+3. References for designs
 🔗 **Official FSD Docs:** [https://feature-sliced.design](https://feature-sliced.design)  
 📘 **Getting Started Guide:** [https://feature-sliced.design/docs/get-started/overview](https://feature-sliced.design/docs/get-started/overview)
 
@@ -127,14 +127,40 @@ These modules are **not pre-installed**, but commonly used alongside FSD:
 
 ### Set Github
 > go to main folder of project
->``` git init```
+> ``` git init```
 > ``` git add . ```
-> ``` ```
-> ``` ```
-> ``` ```
+> ``` git commit -m "Initial commit"```
+> ``` git remote add origin <url>```
+> ``` git branch -M main```
 > ``` ```
 > ``` ```
 
+
+
+### Install Firebase
+src/
+ ├─ shared/
+ │   ├─ lib/
+ │   │   └─ firebase/
+ │   │       ├─ config.ts        # init Firebase
+ │   │       ├─ auth.ts          # logic for authentification
+ │   │       ├─ firestore.ts     # work with Firestore
+ │   │       └─ storage.ts       # work with Firebase Storage
+
+Including example 
+> import { signIn } from 'shared/lib/firebase/auth';
+
+
+
+
+<!-- ======================================================== -->
+<!-- ========================= Block 3 ====================== -->
+<!-- ======================================================== -->
+Login
+https://www.behance.net/gallery/208799541/Login-and-Sign-up-Pages?tracking_source=search_projects|login+ui+ux+web+design&l=9
+
+Personal cabinet
+https://dribbble.com/shots/21752056-Busca-la-asa-Redesign-booking-service-dashboard-design
 
 # Markdown Cheat Sheet
 
