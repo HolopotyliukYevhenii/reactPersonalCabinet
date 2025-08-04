@@ -1,0 +1,80 @@
+.sidebar {
+  // position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background-color: #1e2025;
+  color: #fff;
+  padding: 1rem;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+/* Для больших экранов - sidebar всегда открыт */
+@media (min-width: 769px) {
+  .sidebar.closed {
+    transform: translateX(0);
+  }
+}
+
+/* Для мобильных - скрываем sidebar сдвигом влево */
+@media (max-width: 768px) {
+  .sidebar.closed {
+    transform: translateX(-100%);
+  }
+  .sidebar.open {
+    transform: translateX(0);
+  }
+}
+
+.sidebar h2 {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  padding-left: 10px;
+}
+
+.sidebar ul li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 1rem 0;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+.sidebar ul li svg{
+  margin-right: 0.5rem;
+  color: #fff;
+}
+.sidebar ul li:hover {
+  background-color: #354f52;
+}
+
+.sidebar-toggle {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  background-color: #52796f;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Прячем кнопку на больших экранах */
+@media (min-width: 769px) {
+  .sidebar-toggle {
+    display: none;
+  }
+}

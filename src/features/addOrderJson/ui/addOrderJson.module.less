@@ -1,0 +1,33 @@
+.button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Hover style */
+.button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* Active click style */
+.button:active:not(:disabled) {
+  background-color: #003d80;
+  transform: scale(0.97);
+}
+
+/* Disabled state */
+.button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.addOrderJSON{
+  margin-bottom: 20px;
+}

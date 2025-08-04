@@ -1,0 +1,28 @@
+.inputWrapper {
+  width: 100%;;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Важно! выравниваем по левому краю */
+  gap: 6px;
+  margin-bottom: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.label {
+  font-size: 14px;
+  color: #444;
+}
+
+.input {
+    width: 100%;;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s;
+
+  &:focus {
+    border-color: #1a73e8;
+  }
+}

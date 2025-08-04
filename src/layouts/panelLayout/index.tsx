@@ -1,0 +1,1 @@
+export { PanelLayout } from 'src/layouts/panelLayout/ui/PanelLayout';

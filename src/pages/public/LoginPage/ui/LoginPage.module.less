@@ -1,0 +1,71 @@
+.loginPage {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    &__block {
+        display: flex;
+        width: 100%;
+        flex: 0 0 50%; /* same width and height for children blocks */
+        // padding: 20px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    &__logoBlock , &__formTitle{
+        margin-bottom: 20px;
+    }
+    h1 {
+        margin: 0px;
+    }
+    &__form {
+        text-align: center;
+    }
+
+    &__banner {
+        padding: 20px;
+        height: 100vh;
+
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__maskImg{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    &__maskImg img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__formBlock{
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    &__formInputs{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+
+
+}
+

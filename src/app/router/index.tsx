@@ -13,19 +13,27 @@
  * logic in a declarative and maintainable way.
  */
 
+// =====================================================================
+// =========================== Templates / Layouts =====================
+import { PanelLayout } from 'src/layouts/panelLayout/ui/PanelLayout';
+
+// =====================================================================
+// =========================== Pages ===================================
 import { Routes, Route } from "react-router-dom";
-import { LoginPage } from "src/pages/LoginPage";  
-// import {MainPage} from "pages/MainPage";
-// import { HomePage } from "pages/HomePage";
-// import { LoginPage } from "pages/LoginPage";
+import { LoginPage } from "src/pages/public/LoginPage";
+import { OrdersPage } from "src/pages/user/OrdersPage";
+import { OrderPage } from "src/pages/user/OrderPage";
+
 
 export const AppRouter = () => {
   return (
-    <Routes>
-      {
-      <Route path="/" element={<LoginPage />} />
-      /* <Route path="/" element={<HomePage />} />
-      <Route path="/login" element={<LoginPage />} /> */}
-    </Routes>
+<Routes>
+  <Route path="/" element={<LoginPage />} />
+
+  <Route path="/panel" element={<PanelLayout />}>
+    <Route path="orders" element={<OrdersPage />} />
+    <Route path="order/:orderId" element={<OrderPage />} />
+  </Route>
+</Routes>
   );
 };

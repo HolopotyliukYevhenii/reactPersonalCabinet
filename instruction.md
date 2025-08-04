@@ -162,6 +162,14 @@ https://www.behance.net/gallery/208799541/Login-and-Sign-up-Pages?tracking_sourc
 Personal cabinet
 https://dribbble.com/shots/21752056-Busca-la-asa-Redesign-booking-service-dashboard-design
 
+
+
+MUI:
+
+https://mui.com/material-ui/material-icons/
+
+npm install jspdf jspdf-autotable
+
 # Markdown Cheat Sheet
 
 Headers:
