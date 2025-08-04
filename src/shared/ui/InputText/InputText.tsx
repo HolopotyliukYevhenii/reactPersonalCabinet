@@ -6,7 +6,7 @@ import type { HTMLMotionProps } from 'framer-motion';
 type InputTextProps = HTMLMotionProps<'input'> & {
   className?: string;
   label?: string;
-  id: string; // важно для связи <label htmlFor="...">
+  id: string;
 };
 
 export const InputText: React.FC<InputTextProps> = ({

@@ -5,9 +5,9 @@ import autoTable from "jspdf-autotable";
 type GenericObject = Record<string, any>;
 
 /**
- * Генерирует PDF из массива объектов с динамическими ключами.
- * @param data - массив объектов с любыми ключами и значениями
- * @param fileName - имя файла для сохранения
+
+ * @param data 
+ * @param fileName
  */
 export const pdfCreator = (data: GenericObject[], fileName = "table.pdf") => {
   if (!data.length) {

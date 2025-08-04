@@ -1,3 +1,4 @@
+@import 'src/app/styles/variables.less';
 .orderPage{
     display: flex;
     flex-direction: row;
@@ -11,4 +12,34 @@
         flex: 1;
         margin-right: 20px;
     }
+}
+
+
+
+
+@media @mobile {
+    .orderPage{
+        flex-direction: column;
+
+        h2{
+            font-size: 20px;
+        }
+    }
+    
+}
+
+
+@media @tablet {
+    .orderPage{
+        flex-direction: column;
+
+        h2{
+            font-size: 20px;
+        }
+    }
+}
+
+
+@media @desktop {
+   
 }

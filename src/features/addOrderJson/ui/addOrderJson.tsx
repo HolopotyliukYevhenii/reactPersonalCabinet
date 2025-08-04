@@ -30,8 +30,7 @@ export const AddOrderJson: React.FC = () => {
       setParsedData(data);
       setError(null);
       createOrder(data); // Call the createOrder function to handle the parsed data
-      // Здесь можно вызвать функцию из features, которая обрабатывает data
-      // Например: await addOrdersFromFile(file);
+    
     } catch (err) {
       setError((err as Error).message);
       setParsedData(null);

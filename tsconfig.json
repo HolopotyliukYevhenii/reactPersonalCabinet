@@ -4,13 +4,13 @@
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
-    "skipLibCheck": false,
-    "esModuleInterop": false,
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "esModuleInterop": true, // Enables emit interoperability between CommonJS and ES Modules
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
-    "moduleResolution": "Node",
+    "moduleResolution": "bundler", // Default Node, but can be changed to "node" if needed
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,

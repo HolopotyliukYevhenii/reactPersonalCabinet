@@ -135,7 +135,7 @@ export const TableOrders: React.FC = () => {
               }]} nameFile={`order_${order.documentId}.pdf`} />
               </TableCell>
               <TableCell>
-                <ButtonLink href={`order/${order.documentId}`}>View Details</ButtonLink>
+                <ButtonLink href={`order/${order.documentId}`}>View</ButtonLink>
               </TableCell>
             </TableRow>
           ))}

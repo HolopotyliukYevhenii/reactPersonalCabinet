@@ -40,13 +40,22 @@ function SideBar() {
 
         <Logo />
         <ul className="">
-          <li><HomeIcon />Dashboard</li>
           <li>
-            <a href="/panel/orders" ><PaymentIcon />Orders</a></li>
-          <li><SettingsIcon/>Profile</li>
+            <HomeIcon />Dashboard
+          </li>
+
+          <li><PaymentIcon />
+            <a href="/panel/orders" >Orders</a>
+          </li>
+
           <li>
-            <a href='/'><LogoutIcon />Logout</a>
-            </li>
+            <SettingsIcon/>Profile
+          </li>
+
+          <li>
+            <LogoutIcon /><a href='/'>Logout</a>
+          </li>
+
         </ul>
       </nav>
     </>

@@ -1,3 +1,5 @@
+@import 'src/app/styles/variables.less'; 
+
 .sidebar {
   // position: fixed;
   top: 0;
@@ -12,22 +14,6 @@
   z-index: 1000;
 }
 
-/* Для больших экранов - sidebar всегда открыт */
-@media (min-width: 769px) {
-  .sidebar.closed {
-    transform: translateX(0);
-  }
-}
-
-/* Для мобильных - скрываем sidebar сдвигом влево */
-@media (max-width: 768px) {
-  .sidebar.closed {
-    transform: translateX(-100%);
-  }
-  .sidebar.open {
-    transform: translateX(0);
-  }
-}
 
 .sidebar h2 {
   margin-bottom: 2rem;
@@ -40,6 +26,13 @@
   padding-left: 10px;
 }
 
+.sidebar ul li a {
+  display: block;
+  margin: 0px;
+  color: #fff;
+  text-decoration: none;
+
+}
 .sidebar ul li {
   display: flex;
   justify-content: start;
@@ -72,9 +65,47 @@
   z-index: 1100;
 }
 
-/* Прячем кнопку на больших экранах */
-@media (min-width: 769px) {
+@media @mobile {
+  .sidebar {
+    position: fixed;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+  .sidebar-toggle {
+    display: block;
+  }
+  .sidebar.closed {
+    transform: translateX(-100%);
+  }
+  .sidebar.open {
+    transform: translateX(0);
+  }
+}
+
+
+@media @tablet {
+  .sidebar {
+    position: fixed;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+  .sidebar-toggle {
+    display: block;
+  }
+  .sidebar.closed {
+    transform: translateX(-100%);
+  }
+  .sidebar.open {
+    transform: translateX(0);
+  }
+}
+
+
+@media @desktop {
   .sidebar-toggle {
     display: none;
+  }
+  .sidebar.closed {
+    transform: translateX(0);
   }
 }

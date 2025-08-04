@@ -2,8 +2,7 @@ import { db } from 'src/shared/lib/firebase/config';
 import { collection, addDoc, Timestamp } from 'firebase/firestore';
 
 /**
- * Сохраняет любой JSON-объект в коллекцию 'orders_raw'
- * @param stripePayload - исходный JSON-объект, например, от Stripe
+ * @param stripePayload - The data to be saved as an order.
  */
 export const createOrder = async (stripePayload: any) => {
   try {

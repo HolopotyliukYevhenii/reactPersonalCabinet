@@ -41,7 +41,6 @@ export const LoginPage: React.FC = () => {
               id='username'
               type="text"
               placeholder="Username"
-              value={userName}
               label="Email adress *"
             />
 
@@ -49,11 +48,11 @@ export const LoginPage: React.FC = () => {
               id='password'
               type="password"
               placeholder="Password"
-              onChange={(e) => userPassword(e.target.value)}
+
               label="Password"
             />
 
-            <ButtonLink href="/dashboard" className={styles.loginPage__button}>
+            <ButtonLink href="/panel/orders" className={styles.loginPage__button}>
               Login
             </ButtonLink>
           </form>
@@ -62,11 +61,6 @@ export const LoginPage: React.FC = () => {
 
         </div>
         
-        <div>
-          
-          <ButtonLink href='/adminPanel' >Administrator-Panel</ButtonLink>
-          <ButtonLink href='/userPanel' > Benutzer-Panel </ButtonLink>
-        </div>
       </div>
 
       <div className={`${styles.loginPage__block} ${styles.loginPage__banner}`}> 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom'; // <-- Import Outlet
+import { Outlet } from 'react-router-dom'; 
 import styles from './PanelLayout.module.less';
 import SideBar from 'src/shared/ui/SideBar/SideBar';
 import bannerPhoto from '../assets/banner.webp';

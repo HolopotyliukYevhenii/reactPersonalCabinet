@@ -170,6 +170,27 @@ https://mui.com/material-ui/material-icons/
 
 npm install jspdf jspdf-autotable
 
+
+PWA:
+npm install vite-plugin-pwa --save-dev
+
+Code for adaptives:
+@import 'src/app/styles/variables.less';
+
+
+@media @mobile {
+
+}
+
+
+@media @tablet {
+
+}
+
+
+@media @desktop {
+   
+}
 # Markdown Cheat Sheet
 
 Headers:

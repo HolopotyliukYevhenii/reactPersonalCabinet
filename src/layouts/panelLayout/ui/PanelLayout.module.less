@@ -1,3 +1,4 @@
+@import 'src/app/styles/variables.less'; 
 .panelLayout {
   display: flex;
   flex-direction: row;
@@ -16,4 +17,26 @@
   h2{
     margin-top: 0px;
   }
+}
+
+
+@media @mobile {
+  .panelLayout{
+    flex-direction: column  ;
+      &__blockContent{
+        padding: 0px;
+        flex: none;
+    }
+  }
+
+}
+
+
+@media @tablet {
+  
+}
+
+
+@media @desktop {
+  
 }

@@ -1,11 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-// import styles from '/ButtonLink.module.less';
-import styles from './Logo.module.less'; // Adjust the import path as necessary
+
+import styles from './Logo.module.less'; 
 import type { HTMLMotionProps } from 'framer-motion';
 
 // ======================== Assets =========================
-import logoImage from './ra_logo.svg'; // Adjust the import path as necessary
+import logoImage from './ra_logo.svg';
 
 type LogoProps = HTMLMotionProps<'a'> & {
   className?: string;

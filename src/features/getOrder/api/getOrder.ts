@@ -1,5 +1,5 @@
 import { doc, getDoc } from "firebase/firestore";
-import { db } from "src/shared/lib/firebase/config"; // предположим, ты настроил Firebase в shared/firebase.ts
+import { db } from "src/shared/lib/firebase/config";
 
 export const getOrder = async (orderId: string) => {
   try {
